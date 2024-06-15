@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2> 
+    <p>É o tipo de lista que organiza os passos de forma crescente do 1 ao infinito e você pode colocar qualquer passo entre os outros que ele organiza a numeração automaticamente basta usar o (ol) no começo e fim e o (li) em todos os passos. Do mesmo modo que exemplificarei abaixo <br> <pre>
+            &lt; ol &gt;
+                &lt; li &gt; Acordar 
+                &lt; li &gt; Levantar da cama
+                &lt; li &gt; Tomar café
+                &lt; li &gt; Escovar os dentes
+                &lt; li &gt; Limpar a pia
+                &lt; li &gt; Tirar a carne do congelador
+                &lt; li &gt; Fazer o almoço
+                &lt; li &gt; Servir o almoço
+                &lt; li &gt; Almoçar
+                &lt; li &gt; Escovar os dentes
+                &lt; li &gt; Usar o ccelular
+                &lt; li &gt; Assitir live do Aruan
+                &lt; li &gt; Jantar
+                &lt; li &gt; Tomar um banho
+                &lt; li &gt; Tomar cafézinho
+                &lt; li &gt; Escovar os dentes
+                &lt; li &gt; Abrir o curso de HTML5 do Gustavo Guanabara
+                &lt; li &gt; Estudar
+                &lt; li &gt; Guardar os materiais
+                &lt; li &gt; Dormir
+            &lt;/ ol &gt;
+         </pre>
+         Você pode também colocar tipos de enumeração dos passos, basta mudar a tag (ol) <br> &lt; ol type="1" &gt; &lt; /ol &gt;  CASO QUEIRA EM ORDEM NUMERICA CRESCENTE <br> &lt; ol type="A" &gt; &lt; /ol &gt;  CASO QUEIRA EM ORDEM ALLFABETICA MAIUSCULA <br> &lt; ol type="a" &gt; &lt; /ol &gt;  CASO QUEIRA EM ORDEM ALFABETICA MINUSCULA <br> &lt; ol type="i" &gt; &lt; /ol &gt;  CASO QUEIRA EM ORDEM DE NUMEROS ROMANOS MINUSCULOS <br> &lt; ol type="I" &gt; &lt; /ol &gt;  CASO QUEIRA EM ORDEM DE NUMEROS ROMANOS MAIUSCULOS <br> O <br> &lt; ol type="1" &gt; &lt; /ol &gt; Já vem no modo padrão da lista</p>  
+    <p>
+      <ol>
+        <li>Acordar 
+        <li>levantar
+        <li>limpar a pia
+        <li>tomar cafe da manha escovar os dentes 
+        <li>fazer o almoço
+      </ol> 
+    </p>
+    <ol>
+        <h2>Lista não Organizada</h2>
+        <p>É um alista onde a ordem não importa ex: lista de compras <br> 
+        Para realizar essa lista usamos as seguintes tags:&lt; ul &gt; e &lt;li&gt;. Lembrando que a tag &lt; ul &gt; tem suas variações  como por exemplo: <br>
+        &lt; ul type="circle"&gt; Que coloca os passos da lista após um circulo vazio como no exemplo abaixo <br> 
+        <ul type="circle">
+            <li> Comprar feijão
+            <li> Comprar Arroz
+            <li> Comprar Farinha
+            <li> Comprar suco
+        </ul> <br>
+        Lembrando que o &lt; ul type="circle"&gt; já vem insirido padrão na tag &lt; ul &gt; como no exemplo abaixo <br>
+        <ul>
+            <li> Comprar feijão
+            <li> Comprar Arroz
+            <li> Comprar Farinha
+            <li> Comprar suco
+        </ul> <br>
+        &lt; ul type="square"&gt; Que coloca os passos da lista após um quadrado como no exemplo abaixo <br>
+        <ul type="square">
+            <li> Comprar feijão
+            <li> Comprar Arroz
+            <li> Comprar Farinha
+            <li> Comprar suco
+        </ul> <br>
+        &lt; ul type="disc"&gt; Que coloca os passos da lista após um circulo preenchido como no exemplo abaixo <br>
+        <ul type="disc">
+            <li> Comprar feijão
+            <li> Comprar Arroz
+            <li> Comprar Farinha
+            <li> Comprar suco
+        </ul>  
+    </p>
+    <hr>
+    <h1>Juntando Listas</h1>
+    <h2>Lista A + Lista A </h2>
+    <p>Para misturar listas do mesmo tipo você pode fazer da meneira abaixo &darr;<br>Mas para fazer isso precisa deixar desse modo <br>
+    <pre>
+            Idiomas
+            &lt;ol type="I"&gt;
+                 &lt;li&gt;Europeus 
+                 &lt;ol type="a"&gt;
+                    &lt;li&gt;Alemão
+                    &lt;li&gt;Francês
+                    &lt;li&gt;Italiano 
+                &lt;/ol&gt;
+                &lt;li&gt;Americanos
+                &lt;ol type="a" start="4"&gt;
+                        &lt;li&gt;Inglês
+                        &lt;li&gt;Espanhol
+                &lt;/ol&gt;
+                &lt;li&gt;Asiáticos
+                &lt;ol type="a" start="6"&gt; 
+                        &lt;li&gt;Japones
+                &lt;/ol&gt;
+            &lt;/ol&gt;
+    </pre>
+    <br>Obs: Os (starts) são usados para dar continuidade na ordem por exemplo se o ultimo (li) foi o C para começar do D no próximo tem colocar start= "4". 4 porque é o D é o quarto elemento do alfabeto <br> Agora veremos de forma pronta abaixo
+    <br>Ex : <br> 
+            Idiomas
+        <ol type="I">
+            <li>Europeus </li>
+            <ol type="a">
+                <li>Alemão</li>
+                <li>Francês</li>
+                <li>Italiano</li> 
+            </ol>
+            <li>Americanos</li>
+            <ol type="a" start="4">
+                   <li>Inglês</li>
+                   <li>Espanhol</li>
+            </ol>
+            <li>Asiáticos</li>
+            <ol type="a" start="6"> 
+                   <li>Japones</li>
+            </ol>
+        </ol>
+    </p>
+    <h2>Listas A + Listas B</h2>
+    <p>
+        Para misturar as listas diferentes não tem segredo é somento colocar (ul) aonde quiser de forma livre os passos Ex: <br>
+        <pre>
+            Idiomas
+            &lt;ol type="I"&gt;
+                 &lt;li&gt;Europeus 
+                 &lt;ul type="circle"&gt; 
+                    &lt;li&gt;Alemão
+                    &lt;li&gt;Francês
+                    &lt;li&gt;Italiano 
+                &lt;/ul&gt;
+                &lt;li&gt;Americanos
+                &lt;ul type="circle"&gt; 
+                        &lt;li&gt;Inglês
+                        &lt;li&gt;Espanhol
+                &lt;/ul&gt;
+                &lt;li&gt;Asiáticos
+                &lt;ul type="circle"&gt; 
+                        &lt;li&gt;Japones
+                &lt;/ul&gt;
+            &lt;/ol&gt;
+        </pre> <br> Agora veremos de forma pronta abaixo Ex:<br>
+                Idiomas
+            <ol type="I">
+                <li>Europeus </li>
+                <ul type="circle"> 
+                    <li>Alemão</li>
+                    <li>Francês</li>
+                    <li>Italiano</li> 
+                </ul>
+                <li>Americanos</li>
+                <ul type="circle"> 
+                    <li>Inglês</li>
+                    <li>Espanhol</li>
+                </ul>
+                <li>Asiáticos</li>
+                <ul type="circle"> 
+                    <li>Japones</li>
+                </ul>
+            </ol>
+    </p>
+    <h2>Sub Listas dentro de Sub Listas </h2>
+    <p>
+        Para fazer isso é muito facil é somente você acrescentar mais uma camada de lista de das listas. Ex: <br>
+            <pre>
+                    Idiomas
+                &lt;ol type="I"&gt;
+                    &lt;li&gt;Europeus 
+                    &lt;ul type="circle"&gt; 
+                        &lt;li&gt;Alemão
+                        &lt;li&gt;Francês
+                        &lt;li&gt;Italiano 
+                    &lt;/ul&gt;
+                    &lt;li&gt;Americanos
+                    &lt;ul type="circle"&gt; 
+                            &lt;li&gt;Inglês
+                            &lt;ul type="disc"&gt;
+                                &lt;li&gt; Estados Unidos
+                                &lt;li&gt; Inglaterra
+                            &lt;ul&gt;
+                            &lt;li&gt;Espanhol
+                            &lt;ul type="disc"&gt;
+                                &lt;li&gt; Espanha
+                                &lt;li&gt; Venezuela
+                            &lt;ul&gt;
+                        &lt;ul&gt;
+                    &lt;/ul&gt;
+                    &lt;li&gt;Asiáticos
+                    &lt;ul type="circle"&gt; 
+                            &lt;li&gt;Japones
+                    &lt;/ul&gt;
+                &lt;/ol&gt;
+            </pre>
+                <br> Agora vamos ver pronto Ex:<br>
+                    Idiomas
+                <ol type="I">
+                    <li>Europeus 
+                    <ul type="circle"> 
+                        <li>Alemão
+                        <li>Francês
+                        <li>Italiano 
+                    </ul>
+                    <li>Americanos
+                    <ul type="circle"> 
+                        <li>Inglês
+                        <ul type="disc">
+                            <li> Estados Unidos
+                            <li> Inglaterra
+                        </ul>
+                        <li>Espanhol
+                        <ul type="disc">
+                            <li> Espanha
+                            <li> Venezuela
+                        </ul>
+                    </ul>
+                    <li>Asiáticos
+                    <ul type="circle"> 
+                            <li>Japones
+                    </ul>
+                </ol>
+    </p>
+    <h2>Lista de Definição</h2>
+    <p>A lista de definicição é basicamente como se fosse um dicionário você coloca o termo e abaixo o significado. Ex: <br>
+    <pre>
+            &lt; dl &gt;
+                &lt; dt &gt; O TERMO A &lt;/ dt &gt;
+                &lt; dd &gt; A DEFINIÇÃO A &lt;/ dd &gt;
+                &lt; dt &gt; O TERMO B &lt;/ dt &gt;
+                &lt; dd &gt; A DEFINIÇÃO B &lt;/ dd &gt;
+            &lt;/ dl &gt;
+    </pre>
+    <br> Veja agora abaixo pronto Ex: <br>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação de Hiper Textos</dd>
+        <dt>SEMÂNTICA</dt>
+        <dd>Significado ou Sentido</dd>
+    </dl>
+    </p>
+</body>
+</html>

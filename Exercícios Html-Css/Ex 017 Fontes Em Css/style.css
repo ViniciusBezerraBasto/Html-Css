@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url();
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight:bold ;
+    /* NO CASO A ARIAL NÃO TEM ALTERAÇÃO DE PESO DA FONTE, MAS PARA COLOCAR O PESO NA FONTE VOCÊ PODE COLOCAR FONT-WEIGHT:LIGHTER OU NORMAL OU BOLD OU BOLDER ; SE QUISER PODE VARIAR COM A ESCALA DO PESO DA FONTE E ISSO VAI DE 100 - 900  EX FOT-WEIGHT: 100 OU 200 OU 300 E ASSIM ADIANTE;
+    font-weight: ; 
+    MAS POSSUI A VARIAÇÃO DE ESTILOS*/
+     font-style: italic;
+     /* ShortHand Font é uma ajuda que o Vs Code nos dá diminuidno o tamanho do nosso codigo mas respeitando a ordem designada por ele. A ORDEM É = font: style weight size family OBS NÃO COLOQUE VIRGULA ENTE ELAS A NÃO SER QUE TENHA 2 COMPONENTES NA FOT FAMILY EX: Helvetica, sans-serif E TAMBÉM CASO A FONTE TENHA 2 NOME EX: WORK SANS É UMA FONTA COMPOSTA TEM 2 NOME COLOQUE A FONTE ENTRE ASPAS */
+     font:italic normal 1em arial;
+}

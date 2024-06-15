@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso De Iframes</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        iframe.tela{
+            display: block;
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça Uma Escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis magnam aliquam dolorum, deserunt obcaecati quo voluptatem voluptatibus ab vero hic dolores sunt sequi praesentium molestias nostrum, accusamus iusto est. Est! lorem</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="robson">Primeira Página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="robson">Segunda Página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="robson">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi reiciendis repellat, et nostrum laboriosam adipisci maxime itaque nulla quibusdam cum obcaecati accusantium, vel unde sint tempora porro veritatis dolores! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sed quo blanditiis ut distinctio vitae odit possimus optio, recusandae quas dicta reiciendis, ex soluta accusantium, nostrum dolore aliquid ea architecto.</p>
+
+    <!-- <iframe class="tela" name="robson" src="paginas-extras/textoparainicio.html" frameborder="1">
+        
+    Podemos fazer desse jeito mas também podemos fazer assim-->
+    <iframe class="tela" name="robson" srcdoc="<h1 style='text-align:center;'>Olá Mundo</h1> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ex, corrupti deleniti hic aspernatur ipsam ad quod recusandae ut, non delectus quisquam odio soluta quas sequi commodi modi voluptatum mollitia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur optio omnis consequuntur. Praesentium perferendis rerum reprehenderit doloribus animi minima. Perferendis, at optio reiciendis maiores iure dolor ab est neque? Repellendus?</p> <iframe src='https://siteslucrativos.com/ep-1/' frameborder='1'></iframes>" frameborder="1">
+    <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident commodi quas illo nemo ab numquam dolorum neque fugiat esse! Officiis placeat corrupti laudantium necessitatibus asperiores quisquam eveniet dolores eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit laborum fuga vitae illum impedit incidunt reiciendis aperiam doloribus qui numquam, eaque tempore excepturi suscipit officia quod, illo doloremque iure quasi.</p>
+</body>
+</html>

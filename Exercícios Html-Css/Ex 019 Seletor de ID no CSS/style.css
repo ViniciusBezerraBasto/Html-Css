@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    background-color: #d8fff8;
+    font-family:Tahoma, sans-serif;
+    margin: 20px;
+}
+/* 
+O QUE NO HTML É = ID NO CSS É = #
+O QUE NO HTML É = CLASS NO CSS = . 
+*/
+#Ana{
+    background-color:#64aca0;
+    text-align:center;
+    Color: rgb(255, 255, 255);
+    margin:50px ;
+    padding: 10px ;
+}
+h1{
+    color:#3B5551;
+    text-align:justify;
+}
+.Intermediario{
+    color:rgb(60, 90, 145);
+}
+.Basico{
+    color:rgb(60, 145, 114);
+}
+.Avancado{
+    color:rgb(105, 60, 145);
+}
+p{
+    text-align:justify;
+}
+.Intermediario2{
+    color:rgb(60, 90, 145);
+    font-weight: bold
+}
+.destaque{
+    background-color:rgba(249, 255, 89, 0.6) ;
+
+}

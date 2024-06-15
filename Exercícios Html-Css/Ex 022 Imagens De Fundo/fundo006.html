@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Fundo 006</title>
+    <style> 
+    /* 
+    height: 100vh;
+    background-size: 100%  100%;	-> preenche a tela, mas achata e distorce a imagem */
+
+    /* countain;  	-> a imagem é 100% exibida, com laterais vazias as vezes */
+
+    /* cover;		-> cobre a tela toda mesmo que tenha que cortar a imagem */
+        body{
+            height: 100vh;
+            background-color: #000000;
+            background-image: url(Imagens/wallpaper002.jpg);
+            background-position: center center;
+            /* O background-size: tem 3 principais tipos 
+            0 primeiro é o background-size: auto ; o auto é o modo padrão que ele vem   
+            
+            
+        
+            O background-size: 0 segundo é o background-size: contain; o contain é o modo que prioriza mostrar a imagem toda sem nenhum corte mesmo que pra isso ele não consiga prencher o site com a imagem toda*/
+            
+
+
+
+            /* E por ultimo tem o background-size: cover ; que Prioriza completar o tamanho todo do site mesmo que precisa cortar a imagem  */
+            background-size: cover ;
+            background-repeat: no-repeat;
+        }
+        main{
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            padding: 15px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ea corporis velit! Numquam sunt eveniet voluptatibus deleniti? Ex dignissimos facere, sunt tenetur deleniti laboriosam, similique omnis praesentium quo consectetur illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. At beatae, atque dolorem, ad voluptatem iste omnis enim error numquam debitis non suscipit sunt dolor quasi harum necessitatibus velit aperiam obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid excepturi consectetur, unde officiis at nobis neque atque ab deserunt accusamus possimus quod quasi. Dicta sed vel quam autem quos fuga!</p>
+    </main>
+</body>
+</html>

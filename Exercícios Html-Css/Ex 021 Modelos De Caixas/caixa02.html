@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:lightgray;
+            
+        }
+        header{
+            width: 600px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 7px 0px #757575;
+            border-radius: 15px;
+        }
+        main{
+            background-color: white;
+            padding: 20px 20px 50px 20px;
+            margin: 10px;
+            box-shadow: 2px 2px 7px 0px #757575;
+            border-radius: 15px;
+        }
+        nav {
+            background-color: #DB0B00;
+            box-shadow:2px 2px 3px #710600;
+            text-indent: 10px;
+        }
+        #assuntos>ul{
+            text-indent: 20px;
+            font-weight: lighter;
+            color: #A6130A;
+        }
+        #noticias{
+            color: #A6130A;
+            margin: 25px ;
+            padding: 10px;
+            background-color: #db905271;
+            height:130px ;
+            border-radius: 10px;
+        }
+        aside > p{ 
+            padding-top: 10px 30px 30px 30px;
+            margin-top: 10px;
+            background-color: #DB3100;
+            color: rgb(255, 255, 255);
+            width:500px ;
+            text-align: center;
+            box-shadow:2px 2px 3px #8d1f00;
+        }
+        footer{
+            background-color: #DB0B00;
+            color: white;
+            text-align: center;
+            padding: 6px;
+            margin: 2px;
+            box-shadow: 2px 2px 3px #770600;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        /* Criando Um Círculo
+         div{
+            margin: 50px;
+            height: 100px;
+            width: 100px;
+            background-color: #ffabab;
+            border-radius: 50%;
+        } */
+        a{
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+        }
+        a:hover{
+            text-decoration: double;
+            color: #ffabab;
+        }
+        a:active{
+            text-decoration: underline;
+            color: rgb(216, 174, 255);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site de Grouping Tags</h1>  
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <ul>
+                <li>A morte de Paul Walker</li>
+                <li>A Economia No Brasil</li>
+            </ul>
+        </section>
+        <section id="noticias">
+            <article id="noticias1">
+                <h2>Reportagem sobre a economia brasileira</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt, non repudiandae commodi asperiores quae odit quia accusantium exercitationem impedit illum temporibus totam aperiam adipisci. Obcaecati dicta ratione adipisci expedita!</p>
+                <aside>
+                    <br> <p>Documento Escrito Por Osterk Rudihazar</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Vinicius Bezerra</p>
+    </footer>      
+</body>
+</html>

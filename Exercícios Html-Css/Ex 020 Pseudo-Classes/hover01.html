@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        div:hover{
+            color: rgb(255, 0, 149);
+        }
+        div > p {
+            display: none;
+        }
+        .page{
+            color: rgb(255, 0, 149);
+        }
+        div:hover > p{
+            display:block;
+            color: rgb(231, 255, 134);
+            background-color: rgb(255, 0, 149);
+            width: 100px;
+            text-align: center;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Exemple of Hover </h1>
+    <div>
+        Passe o Mouse Aqui
+        <p><a href="pseudoclasse.html"><span style="color: rgb(231, 255, 134);">Text ocult</span></a></p>
+    </div>
+    <p>Vá para a página principal <a href="pseudoclasse.html"><span class="page">Aqui</span></a></p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical</title>
+    <style>
+        #container{
+            height: 100vh;
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+            height: 500px;
+            width: 500px;
+            position: relative;
+            background-color: blueviolet;
+        }
+        /*  NO POSITION: ABSOLUTE; voce pode usar também left e top que controla a distancia da div até o topo ou o lado da outra div */
+        #conteudo{
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+            height: 250px;
+            width: 250px;
+            background-size: 250px 250px;
+            position: absolute;
+            background-color: aqua;
+            transform: translate(50% , 50%);
+        }
+    </style>
+</head>
+<body>
+    <article id="container">
+        <section id="conteudo">
+        </section>
+    </article>    
+</body>
+</html>

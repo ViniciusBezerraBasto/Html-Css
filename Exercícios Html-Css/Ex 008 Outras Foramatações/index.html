@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Novas Formatações</h1>
+    <h2>Código Fonte</h2>
+    <p>O comando &lt;code&gt; é usado muitas vezes em codigos (por isso o nome) e ele deixa o tamanho do espaçamento de cada letra de forma igualada <br> EX (sem &lt;code&gt;) : document.getElementById('teste') <br> Perceba que as letras "t","i" e "l" estão sendo quase que eesmagadas pelas letras de sua tras e sua frente. Isso é resolvido com a tag &lt;code&gt; <br> EX (com &lt;code&gt;) : <code>document.getElementById('teste')</code> <br>Perceba que dessa vez as letras "i","t"e"l" tiveram o mesmo espaçamento que as outras possuiam</p>
+    <h2>Pré Formatação</h2>
+    <p>A Pré Formatação está presente no html através da tag &lt; pre &gt;ela é usada para deixar os finais e começos de linhas do mesmo modo que você escreveu no VS CODE <br> Ela quase sempre é utilizada juntamente com a tag &lt; code &gt;,como por exemplo abaixo <br>
+<pre>
+    <code>
+    &lt; pre &gt;
+        &lt; code &gt;
+    </code>
+</pre> Agora para você entender como funciona a tag &lt; pre &gt; veja os exemplos abaixo <br> EX:(Sem o &lt; pre &gt;) 
+def contador (i , f):
+c = i
+While c = f:
+    c + = 1
+    print(c , end='') 
+contador (1 ,10)  </p>
+<P>Perceba que as linhas se juntaram sem respeitar o começo e fim que eu coloquei no VS CODDE. Vamos ao exemplo que utilizamos a tag &lt; pre &gt; <br> EX: 
+    <pre>
+        <code>
+            def contador (i , f):
+                c = i
+                While c = f:
+                    c + = 1
+                    print(c , end='')
+            contador (1 ,10) 
+        </code>
+    </pre> 
+</P>
+<p> Para você tirar o espaço que fica no começo da página até o primeiro codigo selecione todos os codigos, aperte SHIFT + TAB até encostar na borda da página. <br> Para fazer o inverso (se distanciar da borda da página) selecione todos os codigos e aperte TAB até a posição desejada. Veja os Exemplos abaixo <br> EX (tirando o espaço até a borda): <br>
+        <pre>
+            <code>
+def contador (i , f):
+    c = i
+    While c = f:
+        c + = 1
+        print(c , end='')
+contador (1 ,10) 
+            </code>
+        </pre> 
+</p>
+<p>Perceba que o começo da linha do primeiro e ultimo codigo encostou na borda da página <br> Veja agora o exemplo utilizando somente o TAB para distanciar mais da borda da página <br> EX(acrescentando espaço até a borda): <br>
+    <pre>
+        <code>
+                                def contador (i , f):
+                                    c = i
+                                    While c = f:
+                                        c + = 1
+                                        print(c , end='')
+                                contador (1 ,10) 
+        </code>
+    </pre>  
+</p>
+<h2>Citações Simples</h2>
+<p>Para fazer citações de formas simple use a tag &lt; q &gt;(ela deixará o texto selecionado entre aspas) <br> EX: Como dizia meu amigo <q>Nunca pule etapas</q>. <br>  Quando for fazer uma citação utilize a tag &lt; q &gt; e não simplesmente colocar entre aspas, pois caso alguem quando ver seus codigos vai entender de cara que as aspas significam citação
+</p>
+<h2>Citações Completas</h2>
+<p>Para realizar citações completas utiliza-se a tag &lt; blockquote &gt; <br> EX:Como dizia Stuart Firestein no livro:Ignorãncia: Como ela impulsiona a ciência <blockquote> O método científico é observação, hipótese, manipulação, mais observação e novas hipóteses, realizando num loop infindável de descobertas</blockquote> <br> Dá também para você colocar de onde você tirou essa citação escrevendo &lt; blockquote cite="link de onde você tirou a citação"&gt; A citação &lt;/blockquote &gt; <br> Isso não irá aparecer no site, mas serve para o google saber de onde você tirou essa informação</p>
+<h2>Abreviação</h2>
+<p>A formatação da Abreviação serve para que quando o usuário passa o ponteiro do mouse em cima de determinada vairação apareça o significado dela. <br> Para fazer isso se utiliza a tag &lt; abbr title = "significado da abreviação" &gt; A abreviação &lt;/ abbr &gt; <br> EX: A <abbr title="Quantidade">quant</abbr> de carne está pouca para a festa no nosso <abbr title="Apartamento">ap</abbr>.</p>
+<h2>Texto Invertido</h2>
+<p>Para fazer um texto invetido utilize a tag &lt; bdo dir="rtl"&gt;O texto &lt;/ bdo &gt; <br> EX: <bdo dir="rtl">Nosso Mundo</bdo></p>
+    
+</body>
+</html>

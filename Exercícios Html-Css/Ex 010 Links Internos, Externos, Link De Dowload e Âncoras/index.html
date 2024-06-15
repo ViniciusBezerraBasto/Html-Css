@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Links e Âncoras</h1>
+    <h2>Links Externos</h2>
+    <p>Para você coloca um link externo no seu site você precisa de uma âncora ( local onde clica que abre o link ). <br> Para isso coloque o texto que você quer colocar como âncora para o link e envelope ele com <br> &lt; a href="Seu link" target="_blank" rel="external" &gt; Âncora para o sue link &lt; /a &gt; <br> Vejamos agora pronto <br> 
+    
+    <a href="https://www.youtube.com/watch?v=agf_8KUsxY8&list=RDMMagf_8KUsxY8&start_radio=1" target="_blank" rel="external">Âncora para o seu link</a> </p> <p>A parte do  <strong>target="_blank" rel="external"</strong> serve para fazer com que o link se abra em uma guia externa do seu site</p>
+
+    <h2>Links Internos</h2>
+    <p>O Link Interno é um tipo de link que se usa para relacionar sua página com outras páginas suas. Uma forma de fazer isso é digitando a tag &lt;a href="sua outra pagina"rel="next"&gt;voltar para a página anterior</a><br> Muito importante lembrar que a parte <strong>"rel="next"</strong> está falando para o google que o link que você irá clicar fará você avançar uma página <br> Já o <strong>"rel="prev"</strong> está falando para o google que você está voltando uma página Ex:</p>
+    <p><a href="page 002.html"rel="next">CLIQUE AQUI PARA AVANÇAR DE PÁGINA</a></p>
+    <h2>Links Para Downloads</h2>
+    <p>Você pode fazer também links de Downloads como por exemplo: Baixar pdfs, Baixar arquivos, Baixar apps e etc e para fazer isso faça da seguinte forma <br>
+        <ul type="circle">
+            <li><a href="livro/Foco Milionário.pdf"target="_blank"rel="external"download="Foco Milionário.pdf"type="application/pdf">Baixar Foco Milinário em PDF</a></li>
+            <li><a href="livro/Foco Milionário.zip"download="Foco Milionário.zip"type="application/zip">Baixar Foco Milinário em ZIP</a></li>
+        </ul> <br> OBS: Quando o arquivo for em pdf <strong>acrescente a tag target="_blank" rel="external"</strong></p>
+
+
+</body> 
+</html>
