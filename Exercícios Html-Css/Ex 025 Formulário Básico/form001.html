@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>O Meu Primeiro Formulario Criado</h1>
+    <!-- NÃO É A MELHOR MANEIRA PARA SE FAZER UM FORMULÁRIO!!!!  -->
+     <!-- TODO FORMUULÁRIO TEM QUE ESTAR ENTRE A TAG FORM -->
+    <form action="cadastro.js" autocomplete="off">
+        <!-- O LABEL É MUITO IMPORTANTE SER USADO -->
+        <p><label for="n-idade">Idade: </label>
+        <input type="text" name="idade" id="n-idade"></p>
+        <p><label for="n-senha">Senha: </label>
+        <input type="password" name="senha" id="n-senha"></p>
+        <!-- Para você conseguir ter a opção de enviar use o INPUT SUBMIT -->
+        <!-- SUBMIT significa Submeter Ou enviar -->
+        <!-- Value é o que vai aparecer exemplo jubileu
+        se eu colocar no value jubileu o jubileu será o botão de enviar -->
+        <p><input type="submit" value="Cadastrar"></p>
+    </form>
+</body>
+</html>
