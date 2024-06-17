@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 002</title>
+    <style>
+        body, html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Senha e Texto</h1>
+    <form action="cadastro.py" method="post">
+        <p>
+            <label for="iuser">Usuário:</label>
+            <input type="text" name="user" id="iuser" required minlength="4" maxlength="12" placeholder=" Informe o Usuário">
+        </p>
+        <div>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="6" maxlength="12" placeholder=" Insira a senha">
+        </div>
+        <p> 
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
