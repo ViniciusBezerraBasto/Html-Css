@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 003</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.py" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome" required maxlength="15" placeholder="Insira seu Nome" autocomplete="name">
+        </p>
+        <p>
+            <label for="imatri">Nº de Matricula</label>
+            <input type="number" name="matri" id="imatri" placeholder="Insira o Nº da Matrícula" minlength="2" maxlength="5" required step="0.2">
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
