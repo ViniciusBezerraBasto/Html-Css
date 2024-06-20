@@ -18,7 +18,15 @@
         </p>
         <p>
             <label for="imes">Período Letivo</label>
-            <input type="month" name="mes" id="imes">
+            <input type="month" name="mes" id="imes" value="2024-06" max="2024-06" min="2010-01" required>
+        </p>
+        <p>
+            <label for="idata">Data da Atividade Avaliativa</label>
+            <input type="date" name="data" id="idata" value="2024-06-20" min="2010-01-29" max="2024-06-20" required>
+        </p>
+        <p>
+            <label for="ihora">Horário de Entrada:</label>
+            <input type="time" name="hora" id="ihora" min="06:40" max="07:45" value="07:30" required>
         </p>
         <p>
             <input type="submit" value="Enviar">
