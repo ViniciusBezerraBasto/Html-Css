@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex Form 005</title>
+    <style>
+        body, html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            margin-bottom: 15px;
+        }
+        fieldset label:hover{
+            color: green;
+        }
+        abbr{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste De Formulário</h1>
+    <form action="cadastro.py" method="get" autocomplete="on">
+        <p>
+            <fieldset>
+                <abbr title="Você Tem Alguma Comida Favorita ?">
+                    <legend>You Have Some Favorite Food ?</legend>
+                </abbr>
+                <abbr title="Sim"><label for="iyes">Yes</label></abbr>
+                <input type="radio" name="Comida Favorita" id="iyes" value="Y" checked> <br>
+                <abbr title="Não"><label for="inot">No</label></abbr>
+                <input type="radio" name="Comida Favorita" id="inot" value="N">
+            </fieldset>
+            <fieldset>
+                <abbr title="Qual É A Sua Comida Favorita ?">
+                    <legend>What's Your Favorite Food ?</legend>
+                </abbr>
+                <abbr title="Arroz"><label for="irice">Rice</label></abbr>
+                <input type="checkbox" name="rice" id="irice" value="R"> <br>
+                <abbr title="Feijão"><label for="ibean">Bean</label></abbr>
+                <input type="checkbox" name="bean" id="ibean" value="B"> <br>
+                <abbr title="Peixe"><label for="ifish">Fish</label></abbr>
+                <input type="checkbox" name="fish" id="ifish" value="F"> <br>
+                <abbr title="Pizza"><label for="ipizza">Pizza</label></abbr>
+                <input type="checkbox" name="pizza" id="ipizza" value="P"> <br>
+                <abbr title="Humburguer"><label for="ihumburguer">Humburguer</label></abbr>
+                <input type="checkbox" name="humburguer" id="ihumburger" value="H"> <br>
+            </fieldset>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar ">
+        </p>
+    </form>
+</body>
+</html>
