@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício de Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-    
+    <form action="cadastro.py" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Escolha uma cor</label>
+            <input type="color" name="cor" id="icor" value="#ffffff">
+        </p>
+    </form>
 </body>
 </html>
