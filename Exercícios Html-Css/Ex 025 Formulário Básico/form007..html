@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body, html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select, Datalist e Textarea</h1>
+    <form action="cadastro.py" method="post" autocomplete="on">
+        <fieldset>
+            <legend> Select </legend>
+            <p>
+                <label for="iesta">Estado:</label>
+                <select name="esta" id="iesta" required>
+                    <option value=""selected disabled>Escolha Abaixo</option>
+                    <optgroup label="Região Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="RR">Roraima</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="PA">Pará</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PI">Piauí</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="PB">Paraíba</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oste">
+                        <option value="GO">Goiás</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="DF">Distrito Federal</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Data List</legend>
+            <p>
+                <label for="iidade">Idade</label>
+                <input type="text" name="idade" id="iidade" list="lstidade">
+                <datalist id="lstidade">
+                    <option value="11"></option>
+                    <option value="22"></option>
+                    <option value="33"></option>
+                    <option value="44"></option>
+                    <option value="55"></option>
+                    <option value="66"></option>
+                    <option value="77"></option>
+                    <option value="88"></option>
+                    <option value="99"></option>
+                    <option value="100"></option>
+                    <option value="111"></option>
+                    <option value="122"></option>
+                    <option value="133"></option>
+                    <option value="144"></option>
+                    <option value="155"></option>
+                    <option value="166"></option>
+                    <option value="177"></option>
+                    <option value="188"></option>
+                </datalist>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Textarea</legend>
+            <p>
+                <label for="imsg">Mensagem</label> <br>
+                <Textarea placeholder=" DEIXE O SEU COMENTÁRIO!!! " name="msg" id="imsg" cols="40" rows="7"></Textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
