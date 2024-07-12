@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* ESTILO PARA TELAS */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    text-indent: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+h2{
+    text-indent: 10px;
+    text-align: center;
+}
+menu li, a{
+    display: inline-block;
+    text-decoration: none;
+    margin:0px 5px 0px 5px;
+    color: white;
+}
+menu{
+    color: white;
+    background-color: gray;
+    padding: 5px;
+}
+menu:hover{
+    color: rgb(179, 179, 179);
+    background-color: rgb(52, 52, 52);
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+menu li, a:hover{
+    display: inline-block;
+    text-decoration: none;
+    margin:0px 5px 0px 5px;
+    color: rgb(160, 160, 160);
+    transition-duration: 0.3s;
+}
