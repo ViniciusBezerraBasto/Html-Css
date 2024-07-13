@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Configurações Geral */
+:root{
+    --cv1:#233eff; 
+    --cv2:#1a2997;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cv1);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+h1{
+    color: white;
+    text-shadow: 3px 3px 2px var(--cv2);
+    padding: 10px;
+}
