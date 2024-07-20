@@ -8,18 +8,57 @@
 /* Tv - min-width: 1200px */
 
 @media print{
-
-}
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    
+ 
 }
 @media screen and (min-width: 768px ) and (max-width: 992px) {   /* Tablet */
-    
+    body{
+        background-image: url(../Imagens/back-tablet.jpg);
+    }
+    img{
+        margin: auto;display: block;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){   /* Desktop */
+    body{
+        background-image: url(../Imagens/back-pc.jpg);
+    }
+    img{
+        margin: auto;display: block;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
     
 }
 @media screen and (min-width: 1200px){   /* TV */
-    
+    body{
+        background-image: url(../Imagens/back-tv.jpg);
+    }
+    img{
+        margin: auto;display: block;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+
+    main{
+        background-color: rgba(255, 255, 255, 0.941);
+        width: 70vw;
+        margin: auto;
+        margin-top: 20px;
+        border-radius:10px;
+        padding: 10px;
+    }
 } 
