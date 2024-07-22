@@ -9,19 +9,22 @@
 
 @media print{
     h1{
-        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     body{
         background-image: none;
     }
     main{
-        padding: 20px;
         border: 2px solid black;
+        width: 90vw;
     }
     main::after{
+        text-align: center;
+        font-size: 0.8em;
         color: gray;
-        content: "Esse texto é só para impressões";
-        text-decoration: underline;
+        content: "Esse texto é só para impressões, mas só use quando necessário";
+        text-decoration: overline;
     }
 
     img#phone{display: none;}
