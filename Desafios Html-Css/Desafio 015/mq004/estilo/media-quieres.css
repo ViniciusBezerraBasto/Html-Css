@@ -8,7 +8,27 @@
 /* Tv - min-width: 1200px */
 
 @media print{
- 
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: none;
+    }
+    main{
+        padding: 20px;
+        border: 2px solid black;
+    }
+    main::after{
+        color: gray;
+        content: "Esse texto é só para impressões";
+        text-decoration: underline;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
 }
 @media screen and (min-width: 768px ) and (max-width: 992px) {   /* Tablet */
     body{
